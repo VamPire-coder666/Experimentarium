@@ -57,6 +57,21 @@ class Ideal_Gas:
         """
         
         return self._Mr
+    
+    def get_avgV(self, T: float) -> float:
+        """ Функция возвращает среднюю квадратичную скорость молекул в газе
+
+        Формула: avg_V = √(3 * R * T / M)
+        R = 8.31 - универсальная газовая постоянная
+
+        Args:
+            T (float): температура, в Кельвинах
+
+        Returns:
+            float: средняя квадратичная скорость молекул, м/с
+        """
+        
+        return (3 * R * T / self._M) ** 0.5
 
     @overload
     def get_P(self, n: float, T: float, mode='nT') -> float:

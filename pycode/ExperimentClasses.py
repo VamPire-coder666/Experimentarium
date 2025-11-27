@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import QWidget, \
     QDialog, QDialogButtonBox, QVBoxLayout, QLabel
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon, QPainter, QPixmap
-from ..scripts.db_functions import *
+from scripts.db_functions import *
 from .HelpWindow import HelpWindow
 import io
 from sheets_py.experiment_window_sheet import experiment_window_sheet
