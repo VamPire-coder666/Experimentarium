@@ -55,4 +55,3 @@ class Tube_Window(MKT_ExpWindow):
                 mode='VT'
             )
             self.P_lcdNumber.display(p)
-            print(int(p), p)
